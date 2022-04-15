@@ -1,0 +1,176 @@
+body {
+  background-color: black;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: white;
+  margin: 0px;
+}
+
+#coconut {
+  max-width: 10vw;
+  max-height: 10vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#quicklinks {
+  font-size: 50px;
+  margin-top: 1rem;
+}
+
+#logo {
+  margin-top: 25vh;
+  margin-bottom: 25px;
+  max-width: 90vw;
+}
+
+#back {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+table {
+  margin-left: 22vw;
+  margin-right: auto;
+  font-size: 25px;
+
+  border-collapse: separate;
+  border-spacing: 5vh;
+}
+
+th,
+td {
+  padding-left: 2vw;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: normal;
+}
+
+#disclosure {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#links,
+#links a {
+  font-size: 35px;
+  -webkit-text-stroke: 2px black;
+  font-weight: bold;
+}
+
+#contactsection a {
+  font-weight: bold;
+  font-size: 27px;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.disclosure {
+  background-color: rgb(59, 59, 59);
+  width: 75vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 6px outset #a452a3;
+  border-radius: 19px;
+  padding: 10px;
+}
+
+.disclosure strong {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #a452a3;
+}
+
+.contact {
+  background-color: rgb(59, 59, 59);
+  width: 75vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 6px outset #a452a3;
+  border-radius: 19px;
+}
+
+.textbox {
+  background-color: rgb(59, 59, 59);
+  width: 75vw;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 6px outset #a452a3;
+  border-radius: 19px;
+  text-align: center;
+}
+
+.project {
+  background-color: rgb(59, 59, 59);
+  width: 75vw;
+  /*height: 10vh;*/
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 6px outset #a452a3;
+  border-radius: 19px;
+}
+
+.project img {
+  max-height: 10vh;
+  float: left;
+}
+
+.project p {
+  margin: 0 auto;
+  /* margin-right: 4vw; */
+  color: #6441a5;
+  font-size: 2rem;
+  -webkit-text-stroke: 0;
+}
+
+#contact a {
+  margin-left: 25px;
+}
+
+.projectlink {
+  text-decoration: none;
+  color: #6441a5;
+}
+
+@media only screen and (max-width: 600px) {
+  #links,
+  #links a {
+    font-size: 3rem;
+    -webkit-text-stroke: none;
+  }
+
+  .linkdivider {
+    display: none;
+  }
+
+  .project p {
+    font-size: 3vh;
+  }
+}
+
+.title .main {
+  margin: 0 auto;
+}
+
+#coconutCredit {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}

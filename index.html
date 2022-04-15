@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xenorio</title>
+
+	<link rel="icon" href="/img/avatar.png">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/particles.css">
+
+	<script src="/js/coconut.js" defer></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+		integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<meta content="Xenorio's Website" property="og:title" />
+	<meta content="Where great stuff is being done, maybe" property="og:description" />
+	<meta content="https://xenorio.xyz" property="og:url" />
+	<meta content="https://xenorio.xyz/img/avatar.png" property="og:image" />
+	<meta content="#6441A4" data-react-helmet="true" name="theme-color" />
+
+</head>
+
+<body>
+
+	<div id="particles-js"></div>
+
+	<img src="/img/TitleImage.png" id="logo"><br>
+
+	<span id="links">
+		<a href="/about" id="about">About</a> <span class="linkdivider">|</span> 
+		<a href="/projects" id="projects">Projects</a> <span class="linkdivider">|</span>
+		<a href="https://blog.xenorio.xyz" target="_blank" id="blog">Blog</a> <span class="linkdivider">|</span> 
+		<a href="/links">Links</a> <span class="linkdivider">|</span>
+		<a href="/contact" id="contact">Contact</a></span>
+
+	<div id="quicklinks">
+		<a href="https://github.com/Xenorio" target="_blank"><i class="fa-brands fa-github" style="color: white;"></i></a>
+		<a href="https://discord.xenorio.xyz" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i></a>
+		<a href="https://telegram.xenorio.xyz" target="_blank"><i class="fa-brands fa-telegram" style="color: #0088cc;"></i></a>
+		<a href="https://twitter.xenorio.xyz" target="_blank"><i class="fa-brands fa-twitter" style="color: #55acee;"></i></a>
+		<a href="mailto:hi@xenorio.xyz" target="_blank"><i class="fa-solid fa-envelope" style="color: yellow;"></i></a>
+	</div>
+
+	<a href="/disclosure" id="disclosure">Legal Disclosure</a>
+
+	<audio type="audio/mpeg" id="coconutAudio" loop></audio>
+	<img id="coconut" style="display: none;">
+	<div id="coconutCredit" style="display: none;">
+		<a href="https://youtu.be/w0AOGeqOnFY"><i class="fa-solid fa-music"></i> The Coconut Song - Jeff Lau <i class="fa-solid fa-music"></i></a>
+	</div>
+
+	<script src="/js/particles.js"></script>
+	<script>particlesJS.load('particles-js', '/particles.json');</script>
+
+	<script>
+		let sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
+		let index = 0
+		window.addEventListener("keydown", async event => {
+
+			if(index == -1)return;
+
+			if(event.key == sequence[index]){
+				index += 1;
+			}else{
+				index = 0;
+			}
+
+			if(index >= sequence.length){
+				index = -1;
+				
+				let audio = document.getElementById('coconutAudio')
+				audio.setAttribute('src', '/sound/coconut.mp3')
+				audio.play()
+
+				document.getElementById('coconutCredit').setAttribute('style', '');
+
+				let coconut = document.getElementById('coconut');
+				coconut.setAttribute('src', '/img/coconut.gif')
+				coconut.setAttribute('style', '');
+				let cocoMover = new RandomObjectMover(coconut, window);
+				cocoMover.start();
+			}
+
+		})
+	</script>
+
+</body>
+
+</html>
