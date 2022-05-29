@@ -76,31 +76,87 @@
 	<script>particlesJS.load('particles-js', '/particles.json');</script>
 
 	<script>
-		let sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
+
+
+
+
+
+
+
+
+
+		/*
+		=====================================================================================
+
+		So you had a look at the source code... Just a heads up: Spoilers beyond this point!
+
+		=====================================================================================
+		*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		// This is responsible for the coconut secret
+		let sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'] // Defines the keys that have to be pressed
 		let index = 0
 		window.addEventListener("keydown", async event => {
 
-			if(index == -1)return;
+			if(index == -1)return; // Secret has already been activated, ignore further key presses
 
+			// If the pressed key is the next one in the sequence, go further up the sequence. Otherwise, reset.
 			if(event.key == sequence[index]){
 				index += 1;
 			}else{
 				index = 0;
 			}
 
+			// Check if sequence has been entered
 			if(index >= sequence.length){
-				index = -1;
+				index = -1; // Ignore further key presses
 				
+				// Load audio and play it
 				let audio = document.getElementById('coconutAudio')
 				audio.setAttribute('src', '/sound/coconut.mp3')
 				audio.play()
 
+				// Display song credits
 				document.getElementById('coconutCredit').setAttribute('style', '');
 
+				// Display coconut
 				let coconut = document.getElementById('coconut');
 				coconut.setAttribute('src', '/img/coconut.gif')
 				coconut.setAttribute('style', '');
-				let cocoMover = new RandomObjectMover(coconut, window);
+
+				// Make it move
+				let cocoMover = new RandomObjectMover(coconut, window); // From /js/coconut.js
 				cocoMover.start();
 			}
 
