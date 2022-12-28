@@ -132,6 +132,7 @@ a {
   border: 6px outset #a452a3;
   border-radius: 19px;
   text-align: center;
+  padding: 1rem;
 }
 
 .project {
