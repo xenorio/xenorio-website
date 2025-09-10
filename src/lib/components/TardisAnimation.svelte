@@ -103,7 +103,7 @@
 				scene.add(tardis);
 			},
 			(progress) => {
-				console.log('TARDIS loading progress:', (progress.loaded / progress.total * 100) + '%');
+				return;
 			},
 			(error) => {
 				console.error('Error loading TARDIS:', error);
