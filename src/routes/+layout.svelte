@@ -19,8 +19,19 @@
 	import '../app.css';
 	import '@fortawesome/fontawesome-free/css/all.css';
 	import ParticleBackground from '$lib/components/ParticleBackground.svelte';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
+
+	onMount(async () => {
+		try {
+			const response = await fetch('/figlet.txt');
+			const figletText = await response.text();
+			console.log('%c' + figletText, 'color: #a855f7; font-family: monospace;');
+		} catch (error) {
+			console.error('Failed to load figlet.txt:', error);
+		}
+	})
 </script>
 
 <svelte:head>
