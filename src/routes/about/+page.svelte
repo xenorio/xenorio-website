@@ -58,7 +58,7 @@
 			<a href="https://music.xenorio.xyz" target="_blank" class="text-purple-400 hover:text-purple-300">music</a> 
 			if you want to see what weird stuff I'm into.<br /><br />
 			
-			I'm neurodivergent, which means my brain works a bit differently than most people's. My sleep schedule is basically "sleep when tired, wake when not tired", which mostly gravitates towards being awake at night. I don't read books at all, prefer mate over coffee, and have some pretty strong left-leaning political views about everything from trash bin systems to, well, most aspects of how society should work.<br /><br />
+			I'm neurodivergent, which means my brain works a bit differently than most people's. My sleep schedule is basically "sleep when tired, wake when not tired", which mostly gravitates towards being awake at night. I don't read books at all, prefer mate over coffee, and have some pretty strong left-leaning political views about everything from trash bin systems to, well, most aspects of how society should work. Also I can yap about free&open-source software and data protection all day.<br /><br />
 			
 			If you're wondering how to pronounce my username, there's literally a 
 			<a href="/pronounce" class="text-purple-400 hover:text-purple-300">whole page for that</a> 
