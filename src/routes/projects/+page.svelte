@@ -45,6 +45,12 @@
 		subtitle="German political group for which I do IT stuff"
 	/>
 
+	<ProjectCard
+		href="https://die-linke-salzgitter.de"
+		title="Die Linke Salzgitter"
+		subtitle='Homepage of the Salzgitter division of the german political party "Die Linke"'
+	/>
+
 	<h1 class="title-font mt-8 mb-4 text-[45px] font-black" style="-webkit-text-stroke: 3px black; text-shadow: 0 0 10px rgba(0,0,0,0.8);">Archived Projects</h1>
 	<h3 class="mb-8 text-[25px]">These projects are discontinued</h3>
 
