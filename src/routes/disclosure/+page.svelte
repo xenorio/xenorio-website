@@ -39,7 +39,7 @@
 			Information in accordance with the Digital Services Act
 			<br /><br />
 			<strong class="underline decoration-[#a452a3] underline-offset-2">Site Owner</strong><br /><br />
-			Marcus Huber<br />
+			Xenorio Huber<br />
 			Trading as Xenorio Industries<br />
 			Sudermannstraße 9<br />
 			38226 Salzgitter, Germany<br />
